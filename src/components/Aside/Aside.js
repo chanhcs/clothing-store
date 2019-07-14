@@ -33,6 +33,7 @@ const aside = () => {
 
       </ReactSwipe>
       <button className="btn btn-primary">Mua ngay</button>
+     <hr></hr>
     </div>
   );
 };
