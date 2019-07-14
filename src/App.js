@@ -78,7 +78,7 @@ class App extends Component {
                 <Aside />
               </div>
               <div className="col-10 mx-auto col-lg-9">
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search" onChange={this.onSearchChange}/>
+                <input className="form-control" type="text" placeholder="Search" aria-label="Search" onChange={this.onSearchChange}/>
                 <div className="py-4">
                   <ListCard listCard={filteredClothes} />
                 </div>
