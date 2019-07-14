@@ -1,28 +1,11 @@
 .img-fluid {
-    width: 17rem;
+   
     height: 20rem;
 }
 
 
-@media(min-width: 600px) and (max-width:800px) {
-    .img-fluid {
-        width: 17rem;
-        height: 14rem;
-    }
-}
 
-
-
-
-@media(min-width: 300px) and (max-width:599px) {
-    .img-fluid {
-        width: 13rem;
-        height: 9rem;
-    }
-}
-
-.card {
-    max-width: 18rem;
+.card {    
     cursor: pointer;    
 }
 
@@ -30,7 +13,6 @@
 
 .card-footer {
     display: grid;
-   
     
 }
 
