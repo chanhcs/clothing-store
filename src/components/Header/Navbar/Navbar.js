@@ -17,8 +17,14 @@ const navbar = () => {
                         <li className="nav-item active ">
                             <a href="/" className="nav-link" >Liên hệ <span className="sr-only">(current)</span></a>
                         </li>
+                       
 
                     </ul>
+                    {/* <ul className="navbar-nav mt-2 mt-lg-0 ml-auto">
+                        <li className="nav-item active">
+                            <a href="/" className="nav-link" >Giỏ hàng<span className="sr-only">(current)</span></a>
+                        </li>
+                    </ul> */}
 
                 </div>
             </nav>

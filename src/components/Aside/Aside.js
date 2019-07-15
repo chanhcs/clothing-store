@@ -47,12 +47,15 @@ const aside = () => {
               </button>
             </div>
             <div class="modal-body">
-              Để mua sản phẩm vui lòng liên hệ trực tiếp với
+              <span>Để mua sản phẩm vui lòng liên hệ trực tiếp với</span>
+              <div className = "py-4">
               <button className="btn btn-primary">
                 <a target="Blank" href='https://m.me/pmchanhpk' tabIndex="0" style={{ textDecoration: 'none', color: 'white' }}>
                   <img src={Messenger} alt='Messenger' style={{width: '30px', height: '50px'}}/> Phạm Minh Chánh
                 </a>
               </button>
+              </div>
+            
 
             </div>
             <div class="modal-footer">
