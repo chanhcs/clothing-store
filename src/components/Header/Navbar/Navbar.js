@@ -1,5 +1,7 @@
 import React from 'react';
+import './Navbar.css';
 import Clothes from './clothes.svg';
+
 const navbar = () => {
     return (
         <div className="sticky-top">             

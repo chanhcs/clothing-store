@@ -8,7 +8,6 @@ import './App.css';
 
 class App extends Component {
   render() {
-
     return (
       <BrowserRouter >
         <div className="App">
@@ -16,6 +15,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Section} />
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     );
