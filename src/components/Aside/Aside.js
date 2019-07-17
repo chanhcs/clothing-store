@@ -27,7 +27,7 @@ const aside = () => {
         swipeOptions={{ continuous: false }}
         ref={el => (reactSwipeEl = el)}
       >
-
+      
         <img src={img1} alt='img1' />
         <img src={img2} alt='img2' />
         <img src={img3} alt='img3' />

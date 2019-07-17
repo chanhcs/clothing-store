@@ -1,12 +1,12 @@
 import React from 'react';
 import './Navbar.css';
-import Clothes from './clothes.svg';
+
 
 const navbar = () => {
     return (
         <div className="sticky-top">             
             <nav className="navbar navbar-expand-lg navbar navbar-dark bg-primary">
-                <a href="/" className="navbar-brand" ><img src={Clothes} alt='clothes' style={{ width: '30px', height: '30px' }} /></a>
+
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
