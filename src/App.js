@@ -15,6 +15,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Section} />
           </Switch>
+        
           <Footer />
         </div>
       </BrowserRouter>
