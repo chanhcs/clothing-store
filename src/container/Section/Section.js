@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Aisde from '../../components/Aside/Aside';
 import ListCard from '../../components/Card/ListCard';
+import Panigation from '../../components/Pagination/Pagination';
 
 class Section extends Component {
     constructor() {
@@ -90,6 +91,7 @@ class Section extends Component {
                         <input className="form-control" type="text" placeholder="Search" aria-label="Search" onChange={this.onSearchChange} />
                         <div className="py-4">
                             <ListCard listCard={filteredClothes} />
+                            {/* <Panigation /> */}
                         </div>
                     </div>
                 </div>

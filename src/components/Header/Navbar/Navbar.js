@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-
+import {NavLink} from 'react-router-dom';
 
 const navbar = () => {
     return (
@@ -14,14 +14,22 @@ const navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
-                            <a href="/" className="nav-link" >Trang chủ <span className="sr-only">(current)</span></a>
+                            <NavLink to='/' className="nav-link" >Trang chủ <span className="sr-only" >(current)</span> </NavLink>
                         </li>
                         <li className="nav-item active ">
-                            <a href="/" className="nav-link" >Liên hệ <span className="sr-only">(current)</span></a>
+                            <NavLink to={{
+                                pathname: '/contact',
+                                hash: '#submit',
+                                search: '?quick-submit=true'
+                            }} className="nav-link" >Liên hệ <span className="sr-only">(current)</span></NavLink>
                         </li>
                        
 
                     </ul>
+
+                    
+
+                   
                     {/* <ul className="navbar-nav mt-2 mt-lg-0 ml-auto">
                         <li className="nav-item active">
                             <a href="/" className="nav-link" >Giỏ hàng<span className="sr-only">(current)</span></a>
