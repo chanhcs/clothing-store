@@ -16,14 +16,14 @@ class Details extends Component {
     }
 
     render() {
-        const pid = parseInt(this.props.match.params.id, 10);
+        const pid = parseInt(this.props.match.params.id);
         return (
             <div>
                 {
                     this.state.loadedPost.map((val, key) => {
                         //console.log(typeof(pid))
                         if (val.id === pid) {
-                            return <div key = {key}> <h3>Tên sản phẩm: {val.title} </h3> <p>Mô tả chi tiết: {val.body}</p> </div>
+                            return <div key={val.id}> <h3>Tên sản phẩm: {val.title} </h3> <p>Mô tả chi tiết: {val.body}</p> </div>
                         }
                         return '';
                     })

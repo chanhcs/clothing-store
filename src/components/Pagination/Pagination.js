@@ -1,34 +1,39 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+
 
 class Pagination extends Component{
     state = {
         count: 1,
-        active: true
+        active: true,
     }
-
-    prevPageHandler = () => {
     
-        this.setState({count: this.state.count - 1});
+
+
+    prevPageHandler = () => {    
+        this.setState({count: this.state.count - 1});   
+        
     }
 
     nextPageHandler = () => {
         this.setState({count: this.state.count + 1});
     }
 
+    
+ 
+    
+   
+
     render() {
         return (
             <nav className="py-3 d-flex table-responsive">
-                <ul className="py-8 mx-auto pagination pagination-lg">
-                    <li className="page-item disabled">
-                        <Link className="page-link" to="/" onClick={this.prevPageHandler} >Prev</Link>                           
-                    </li>
+                <ul className="py-8 mx-auto btn-group">
+                 
+                    <button className="btn btn-default someclass" type="submit" onClick={this.prevPageHandler} disabled={this.state.count === 1}>Prev</button>
+
                 
-                    <li className="page-item"><Link className="page-link" to="/">{this.state.count}</Link></li>
+                    <button className="btn btn-default someclass" type="submit">{this.state.count}</button>
                     
-                    <li className="page-item">
-                        <Link className="page-link" to="/" onClick={this.nextPageHandler} >Next</Link>
-                    </li>
+                    <button className="btn btn-default someclass" type="submit" onClick={this.nextPageHandler} disabled={this.state.count === 4}>Next</button>
                 </ul>
             </nav>
 

@@ -27,7 +27,7 @@ const aside = () => {
         swipeOptions={{ continuous: false }}
         ref={el => (reactSwipeEl = el)}
       >
-      
+
         <img src={img1} alt='img1' />
         <img src={img2} alt='img2' />
         <img src={img3} alt='img3' />
@@ -35,7 +35,7 @@ const aside = () => {
       </ReactSwipe>
       <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
         Mua hàng
-</button>
+      </button>
 
       <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog" role="document">
@@ -48,14 +48,14 @@ const aside = () => {
             </div>
             <div className="modal-body">
               <span>Để mua sản phẩm vui lòng liên hệ trực tiếp với</span>
-              <div className = "py-4">
-              <button className="btn btn-primary">
-                <a target="Blank" href='https://m.me/pmchanhpk' tabIndex="0" style={{ textDecoration: 'none', color: 'white' }}>
-                  <img src={Messenger} alt='Messenger' style={{width: '30px', height: '50px'}}/> Phạm Minh Chánh
+              <div className="py-4">
+                <button className="btn btn-primary">
+                  <a target="Blank" href='https://m.me/pmchanhpk' tabIndex="0" style={{ textDecoration: 'none', color: 'white' }}>
+                    <img src={Messenger} alt='Messenger' style={{ width: '30px', height: '50px' }} /> Phạm Minh Chánh
                 </a>
-              </button>
+                </button>
               </div>
-            
+
 
             </div>
             <div className="modal-footer">

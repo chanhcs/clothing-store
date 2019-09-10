@@ -91,7 +91,7 @@ class Section extends Component {
                         <input className="form-control" type="text" placeholder="Search" aria-label="Search" onChange={this.onSearchChange} />
                         <div className="py-4">
                             <ListCard listCard={filteredClothes} />
-                            {/* <Panigation /> */}
+                             <Panigation /> 
                         </div>
                     </div>
                 </div>
